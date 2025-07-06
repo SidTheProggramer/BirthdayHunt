@@ -100,3 +100,45 @@ button#startBtn:hover {
   pointer-events: none;
   z-index: 5;
 }
+
+/* 📱 Mobile Optimization */
+@media (max-width: 500px) {
+  body {
+    padding: 1rem;
+    overflow-y: auto;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    max-width: none;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .tutorial {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .clue-box {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .timer {
+    font-size: 1.2rem;
+  }
+
+  button#startBtn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    width: 100%;
+  }
+}
