@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Treasure Hunt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Birthday Quest 🎉</h1>
+    <div class="tutorial">
+      Welcome to your secret birthday quest! You'll be shown mysterious clues — but only for 30 seconds each. After that, they're gone forever! Keep your eyes peeled, your brain sharp, and your feet ready to sprint! 🕵️‍♀️
+    </div>
+
+    <div class="clue-box" id="clueBox">Tap "Start" to begin your magical hunt!</div>
+    <div class="timer" id="timer">⏳ 30s</div>
+    <button onclick="startHunt()">Start</button>
+
+    <div id="qr-wrapper">
+      <p>📱 Scan to rejoin this hunt from your phone:</p>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
