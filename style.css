@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5b1f5, #dca1ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.clue-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-height: 60px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: #ffffff33;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #ffffff55;
+  transform: scale(1.05);
+}
+
+.timer {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #ffffffdd;
+}
+
+#qr-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+}
+
+#qrcode {
+  margin: 1rem auto;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
